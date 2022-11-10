@@ -37,7 +37,7 @@ app.post('/sum', (req,res) =>  {
     let numberlist = req.body.numbers;
     let sum = 0;
     for (let number in numberlist) {
-        sum += parseInt(number)
+        sum += parseInt(numberlist[number])
     }
     res.json(sum)
 })
